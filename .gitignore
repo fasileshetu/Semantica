@@ -1,0 +1,43 @@
+# Data files — do not commit large datasets, store in S3 instead
+*.csv
+*.json
+*.parquet
+*.xml
+*.bz2
+*.gz
+data/
+raw/
+*.index
+*.faiss
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# PySpark / Spark
+spark-warehouse/
+metastore_db/
+derby.log
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+*.pem
+*.key
+credentials.json
+aws_credentials
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
