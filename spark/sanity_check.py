@@ -1,9 +1,3 @@
-"""
-Minimal Spark sanity check: parse sample_articles.xml, load into a DataFrame,
-run a basic transformation. This confirms the Spark install works end-to-end
-before scaling up to the real Wikipedia dump.
-"""
-
 import xml.etree.ElementTree as ET
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import length, col
