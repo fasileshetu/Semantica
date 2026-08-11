@@ -14,7 +14,7 @@ df.printSchema()
 print("\nSample rows:")
 df.show(10)
 
-zip_col = "zip"  # update this with df.printSchema() output
+zip_col = "zipcode"
 
 count_78727 = df.filter(df[zip_col] == 78727).count()
 print(f"\nNumber of people in zip code 78727: {count_78727}")
